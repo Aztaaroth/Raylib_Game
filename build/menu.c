@@ -4,14 +4,14 @@
 
 GameState displayMenu() {
     int selectedOption = 0;
-    const char *menuOptions[] = { "Start Game (Easy)", "Start Game (Medium)", "Start Game (Hard)", "Controls", "Quit" };
+    const char *menuOptions[] = { "Easy", "Medium", "Hard", "Controls", "Quit" };
     const int optionsCount = 5;
 
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(BLACK);
 
-        DrawText("ARKANOIDER", SCREEN_WIDTH / 2 - 150, 100, 40, WHITE);
+        DrawText("ARKANOIDER", SCREEN_WIDTH / 2 - 150, 100, 40, CYAN);
 
         // Menu options
         for (int i = 0; i < optionsCount; i++) {
@@ -52,9 +52,9 @@ void DisplayControls() {
         DrawText("CONTROLS", SCREEN_WIDTH / 2 - 100, 100, 40, WHITE);
         DrawText("Left Arrow: Move paddle Left", SCREEN_WIDTH / 2 - 200, 200, 20, WHITE);
         DrawText("Right Arrow: Move paddle Right", SCREEN_WIDTH / 2 -200, 250, 20, WHITE);
-        DrawText("Press ESC to go back", SCREEN_WIDTH / 2 - 200, 300, 20, WHITE);
+        DrawText("Press BACKSPACE to go back", SCREEN_WIDTH / 2 - 200, 300, 20, WHITE);
         
-        if (IsKeyPressed(KEY_ESCAPE)) {
+        if (IsKeyPressed(KEY_BACKSPACE)) {
             return;
         }
         

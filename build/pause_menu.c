@@ -1,5 +1,6 @@
 
 #include "pause_menu.h"
+#include "config.h"
 #include "raylib.h"
 
 // Pause menu state
@@ -38,7 +39,7 @@ void DrawPauseMenu(GameState *gameState) {
                 break;
             case 3: // Quit
                 CloseWindow(); // Close the game window
-                exit(0);       // Exit the application
+               
         }
     }
 }

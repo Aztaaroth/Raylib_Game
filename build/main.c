@@ -3,6 +3,10 @@
 #include "pause_menu.h" // Pause menu functions
 #include "game_state.h" // Include the shared GameState enum
 #include "config.h"
+
+#include "menu.c"
+#include "pause_menu.c"
+
 #include <stdlib.h>
 #include <time.h>
 

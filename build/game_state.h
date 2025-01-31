@@ -8,6 +8,7 @@ typedef enum {
     GAMEPLAY,
     CONTROLS,
     PAUSE_MENU,
+    MAIN_MENU,
     QUIT
 } GameState;
 
