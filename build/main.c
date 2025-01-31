@@ -62,7 +62,7 @@ int main() {
                 // Game objects
                 Ball ball = {
                     .position = { SCREEN_WIDTH / 2.0f, SCREEN_HEIGHT / 2.0f },
-                    .velocity = { 300.0f, -300.0f },
+                    .velocity = { 500.0f, -500.0f },
                     .radius = BALL_RADIUS
                 };
 
